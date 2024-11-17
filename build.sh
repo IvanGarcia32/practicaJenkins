@@ -18,7 +18,7 @@ mkdir -p "$OUTPUT_DIR"
 
 # Generar los archivos HTML
 echo "Generando index.html"
-cat <<EOL > index.html
+cat <<EOL > "$OUTPUT_DIR/index.html"
 <!DOCTYPE html>
 <html>
 <head>
@@ -37,7 +37,7 @@ cat <<EOL > index.html
 EOL
 
 echo "Generando pag1.html"
-cat <<EOL > pag11.html
+cat <<EOL > "$OUTPUT_DIR/pag1.html"
 <!DOCTYPE html>
 <html>
 <head>
@@ -52,7 +52,7 @@ cat <<EOL > pag11.html
 EOL
 
 echo "Generando pag2.html"
-cat <<EOL > pag2.html
+cat <<EOL > "$OUTPUT_DIR/pag2.html"
 <!DOCTYPE html>
 <html>
 <head>
@@ -67,7 +67,7 @@ cat <<EOL > pag2.html
 EOL
 
 echo "Generando pag3.html"
-cat <<EOL > pag3.html
+cat <<EOL > "$OUTPUT_DIR/pag3.html"
 <!DOCTYPE html>
 <html>
 <head>
@@ -81,6 +81,5 @@ cat <<EOL > pag3.html
 </html>
 EOL
 
-# Copiar los archivos HTML al directorio de salida
-cp *.html "$OUTPUT_DIR/"
+
 echo "Sitio construido en la carpeta $OUTPUT_DIR."
